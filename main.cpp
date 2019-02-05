@@ -19,4 +19,13 @@ int main()
     std::cout << "The string representation is: "
               << sls::detectorTypeToString(sls::detectorType::JUNGFRAU)
               << '\n';
+
+    auto enum_string = detectorTypeToString(sls::detectorType::JUNGFRAU);
+
+    if (enum_string=="Jungfrau"){
+        std::cout << "enum_string is Jungfrau\n";
+    }else{
+        std::cout << "enum_string is NOT Jungfrau\n";
+    }
+
 }
